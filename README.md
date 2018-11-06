@@ -1,2 +1,2 @@
 # Regnant-Soft-ProblemSolvers
-Problem solvers is the name of the batch ..Who want to learn JS.
+regnant-soft batch2 students repo for training.
