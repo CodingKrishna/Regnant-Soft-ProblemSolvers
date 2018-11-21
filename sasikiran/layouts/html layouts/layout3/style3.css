@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.one{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+}
+
+.header {
+
+    background-color: red;
+    
+    color: white;
+}
+.logo{
+    font-size: 34px;
+    text-align: center;
+    color: white;
+}
+
+.main-nav {
+    padding-left: 1024px;
+    margin-top: -18px;
+    color: white;
+    text-decoration: none;
+    margin-left: 14px;
+    
+}
+.navi
+{
+    position: absolute;
+    top: 17px;
+    
+}
+
+ul 
+{
+    list-style-type: none;
+    
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+   
+}
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+a{
+    color: white;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+
+.two {
+    background-color: cadetblue;
+    width: 25%;
+    height: 570px;
+}
+
+.four{
+    background-color: black;
+    height: 285px;
+    width: 25%;
+    margin-top: -570px;
+    margin-left: 75%;
+}
+.ver-nav{
+    list-style: none;
+    width: 24%;
+    text-align: center;
+    background: black;
+    /* height: 9px; */
+    padding-left: 142px;
+    /* padding: 0px; */
+}
+
+.five{
+    background-color: navy;
+    height: 285px;
+    width: 25%;
+    margin-left: 75%;
+}
+
+.six{
+    background-color: seashell;
+    width: 25%;
+    height: 620px;
+}
+
+.seven{
+    background-color: palevioletred;
+    width: 75%;
+    height: 620px;
+    margin-left: 25%;
+    margin-top: -620px;
+}
+
+.eight{
+    background-color: lightgreen;
+    width: 50%;
+    height: 520px;
+    margin-left: 25%;
+    margin-top: -563px;
+}
+.nine{
+    background-color: darkkhaki;
+    height: 520px;
+    width: 70%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+.ten{
+    background-color: orange;
+    width: 100%;
+    height: 620px;
+}
+
+.eleven{
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    font-size: 27px;
+    color: white;
+    padding-top: 17px;
+    text-align: left;
+}
+
+.eleven a{
+    padding-left: 482px;
+}
