@@ -1,0 +1,322 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.container
+{
+    width: 100%;
+  
+    height: auto;
+}
+header
+{
+    background-color: #cbc6c0;
+    height: 100px;
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 55px;
+    padding-top: 10px;
+}
+.navi
+{
+    height:90px;
+
+   background-color: #f3f3f3;
+}
+.navi_div
+{
+
+    width: 650px;
+    height: 90px;
+ 
+    position: relative;
+    left: 467px;
+    top: 0px;
+
+}
+.navi_div > ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+
+}
+.navi_div > ul  li
+{
+    display: inline;
+    float: left;
+    
+    padding-top: 15px;
+    
+    
+    
+}
+.navi_div ul > li > a
+{
+
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 25px 17px 13px;
+
+}
+.navi_div ul li a:hover
+{
+    border-bottom: 3px solid #0082cb;
+    color: #f39;
+}
+
+#sec_1
+{
+    height: 600px;
+}
+.middle_1
+{
+    height: 550px;
+    width: 1349px;
+    position: relative;
+    top: 25px;
+    left: 0px;
+}
+
+#sec_2
+{
+    height: 600px;
+ 
+}
+.middle_2
+{
+  
+    height: 560px;
+    width: 1250px;
+    position: relative;
+    top: 25px;
+    left: 42px;
+ 
+}
+.sec2_one
+{
+    width: 386px;
+    height: 560px;
+   
+
+}
+.sec2_two
+{
+    width: 386px;
+    height: 560px;
+    position: relative;
+    top: -560px;
+    left: 420px;
+}
+.sec2_three
+{
+    width: 388px;
+    height: 560px;
+    position: relative;
+    top: -1120px;
+    left: 834px;
+}
+
+#sec_3
+{
+  height: 600px;
+
+}
+.middle_3
+{
+    height: 560px;
+    width: 1250px;
+    position: relative;
+    top: 25px;
+    left: 42px;
+   
+
+}
+.sec3_one
+{
+    width: 380px;
+    height: 560px;
+ 
+}
+.sec3_two
+{
+    width: 380px;
+    height: 560px;
+   
+    position: absolute;
+    left: 415px;
+    top: 0px;
+}
+.sec3_three
+{
+    width: 380px;
+    height: 560px;
+  
+    position: absolute;
+    top: 0px;
+    left: 840px;
+}
+
+#sec_4
+{
+  height: 600px;
+
+}
+.middle_4
+{
+    height: 560px;
+    width: 1250px;
+    position: relative;
+    top: 25px;
+    left: 42px;
+   
+
+}
+.sec4_one
+{
+    width: 380px;
+    height: 560px;
+ 
+}
+.sec4_two
+{
+    width: 380px;
+    height: 560px;
+   
+    position: absolute;
+    left: 415px;
+    top: 0px;
+}
+.sec4_three
+{
+    width: 380px;
+    height: 560px;
+  
+    position: absolute;
+    top: 0px;
+    left: 840px;
+}
+
+
+#sec_5
+{
+  height: 600px;
+
+}
+.middle_5
+{
+    height: 560px;
+    width: 1250px;
+    position: relative;
+    top: 25px;
+    left: 42px;
+   
+
+}
+.sec5_one
+{
+    width: 380px;
+    height: 560px;
+ 
+}
+.sec5_two
+{
+    width: 380px;
+    height: 560px;
+   
+    position: absolute;
+    left: 415px;
+    top: 0px;
+}
+.sec5_three
+{
+    width: 380px;
+    height: 560px;
+  
+    position: absolute;
+    top: 0px;
+    left: 840px;
+}
+#foot_1
+{
+    width: 100%;
+
+    height: 200px;
+    margin-top: 30px;
+}
+.top_scroll
+{
+    text-align: center;
+}
+.btn-sucess
+{
+    border: 0;
+    width: 170px;
+    padding: 16px 14px;
+    background: #abc72c;
+    cursor: pointer;
+    font-size: .77778rem;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    margin-left: 620px;
+}
+.subscribe
+{
+    width: 1349px;
+    height: 198.3px;
+    background-color: #f2f2f2;;
+}
+.subscribe_head
+
+{
+    margin: 0 auto;
+    padding: 50px 12px 10px;
+    font-size: 1.33333rem;
+    font-family: Avenir-Black;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.subscribe_search
+{
+    margin: 0px auto;
+    width: 560px;
+}
+#search_id
+{
+    width: 330px;
+    min-height: 15px;
+    font-size: 15px;
+    border: 0;
+    padding: 15px;
+    background: #fff;
+}
+
+.btn-black
+{
+    background-color: black;
+    color: #fff;
+    border: 0;
+    padding: 16px 14px;
+    width: 190px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 7px;
+    margin-left: 
+}
