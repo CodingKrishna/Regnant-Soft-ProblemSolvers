@@ -1,0 +1,278 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            *{
+                margin: 0;
+             }           
+              #main-div
+            {
+                margin: 0px;
+            }
+            .header
+            {
+                width: 100%;
+                height: 40px;
+                background-color: rgb(248, 3, 166);
+                box-shadow: 5px rgba(212, 22, 149, 0.5) ;
+                position: fixed;
+                z-index: 1;;
+            }
+            .text
+            {
+               font-size: 24px;
+               color: white;
+               padding: 10px 0px 0px 100px;
+               float: left;
+            }
+            
+            li
+            {
+              float: left; 
+        
+            }
+             ul
+            {
+                 
+                list-style-type:none;
+                padding-top: 12px;
+                margin: 0;
+            }
+           ul li a
+           {
+                  display: inline;
+                  color: white;
+                  padding: 12px 17px;
+                  text-decoration: none;
+            }
+           .navi a:hover
+            {
+                background-color: rgba(250, 242, 247, 0.5);
+               position: relative;
+            }
+            .drop-down
+           {
+                display: none; 
+                position:absolute;
+                z-index:1;
+                background-color:rgba(212, 22, 149, 0.7);
+                top:28px;        
+                
+            }
+            .drop-menu
+            {
+                position: relative;
+            }
+               
+            .drop-down a
+            {
+                color:white;
+                text-decoration: none;
+                display: block;
+            }
+            .drop-down  a:hover
+            {
+	            background-color:rgba(241, 234, 239, 0.5);
+                     
+            }
+            .drop-menu:hover .drop-down
+            {
+                 display: block;
+                 padding:4px
+            }
+            .first-body
+            { 
+                max-width: 100%;
+                height: 350px;
+                background-size:cover;
+                background-position:center;         
+            }
+            .first 
+            {
+                max-width: 80%;
+            }
+            .btn
+            {
+                padding: 30px 0px 0px 600px;
+            }
+            h1
+            {
+                color:white;
+                padding: 80px 10px 0px 550px;
+                font-size: 34px;
+            }
+           .first p
+           {
+                max-width: 80%;
+                color:white;
+                text-align: center;
+                padding:20px 10px 10px 250px;     
+            }
+            i span
+            {
+                padding: 12px;
+            }
+            button
+            {
+                width: 180px;
+                height: 55px;
+                background-color:rgb(221, 49, 192);
+                color: white;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+            }
+            button:hover
+            {
+                cursor: pointer;
+                outline: none;
+            }
+            .main-body
+            {
+                max-width: 100%;
+                height: 400px;
+            }
+            .body-text
+            {
+                max-width: 90%;
+                height: 100px;
+            }
+            .body-text p
+            {
+                color: black;
+                padding: 20px 0px 0px 100px;
+            }
+            .body-img
+            {
+                max-width: 100%;
+                height: 300px;
+                padding: 100px 0px 0px 100px;
+            }
+            h2
+            {
+                color:rgb(221, 49, 192);
+                padding: 40px 0px 0px 100px;
+                  
+            }
+            .one
+            {
+                max-width: 20%;
+                height: 270px;
+                float: left;
+                box-shadow: 3px 3px 3px 3px rgb(235, 241, 235);
+                margin: 35px;
+            }
+            .footer
+            {
+                max-width: 100%;
+                height: 100px;
+                clear: both;
+                box-shadow: 5px 5px 5px 5px rgb(147, 156, 147);
+            }
+            .footer  ul
+            {
+              padding-top: 60px;
+            }
+            .footer li
+            {
+                list-style-type: none;
+                float: left;
+            }
+            .footer a
+            {
+                text-decoration: none;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-div">
+            <div class="header">
+                <a class="text">MU MATERIAL</a>
+                        <div class="navi" style="float: right;">  
+                                <ul>
+                                        <li class="drop-menu"> <a href="#">ABOUT ME</a>
+                                           <div class="drop-down"><a href="#">Accessories</a>
+                                                               <a href="#">Informatics</a>
+                                            </div>                                          
+                                        </li>
+                                        <li><a href="#">RESUME</a></li>
+                                        <li><a href="#">PORTFOLIO</a></li>
+                                        <li><a href="#">TESTIMONIAL</a></li>
+                                        <li><a href="#">BLOG</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                               </ul>
+                        </div>
+            </div>
+
+            <div class="first-body" style="background-image:url('home-img1.jpg')">
+                <div class="first"> <h1>HI! I'M <span style="color:rgb(224, 59, 197)">Anvesh</span></h1> 
+                     
+                    <p>I'M A USA BASED UX/UI DESIGNER CREATING AWESOME AND EFFECTIVE VISUAL IDENTITIES FOR
+                          COMPANIES OF ALL SIZES AROUND THE GLOBE
+                    </p>
+                </div>  
+                    <div class="btn">
+                        <button >
+                             <i class="fa fa-paper-plane-o"><span>HIRE ME</span></i>
+                        </button>
+                   </div>
+            </div>
+            <div class="main-body">
+
+                <div class="body-text">
+                    <h2>EDUCATION</h2>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
+                       of letters, as opposed to using 'Content here, content here.
+                       It is a long established fact that a reader will be distracted by the 
+                       readable content of a page when looking at its layout. The point of using Lorem
+                       Ipsum is that it has a more-or-less normal distribution of letters, 
+                       as opposed to using 'Content here, content here', making it look likereadable English Master
+                    </p>
+                </div>
+                <div class="body-img">
+                    <div class="one">
+                        <div class="one-text"><h3 style="color:green;padding:10px 10px 0px 60px">2012-2013</h3>
+                             <div class="one-img"><img src="graduate-cap.jpg" style="width:200px;height:200px">
+                                 <div class="bot-text"><p style="color:green;padding:10px 0px 0px 20px">Master Of Science</p></div>
+                             </div>
+                        </div>   
+                    </div>
+                    <div class="one">
+                            <div class="one-text"><h3 style="color:green;padding:10px 10px 0px 60px">2008-2012</h3>
+                                 <div class="one-img"><img src="graduate-cap.jpg" style="width:200px;height:200px">
+                                     <div class="bot-text"><p style="color:green;padding:10px 0px 0px 20px">Bachelor Of Science</p></div>
+                                 </div>
+                            </div>   
+                        </div>
+                        <div class="one">
+                                <div class="one-text"><h3 style="color:green;padding:10px 10px 0px 60px">2006-2008</h3>
+                                     <div class="one-img"><img src="graduate-cap.jpg" style="width:200px;height:200px">
+                                         <div class="bot-text"><p style="color:green;padding:10px 0px 0px 20px">A Level</p></div>
+                                    </div>
+                                </div>   
+                        </div>           
+                            <div class="one">
+                                    <div class="one-text"><h3 style="color:green;padding:10px 10px 0px 60px">2004-2006</h3>
+                                        <div class="one-img"><img src="graduate-cap.jpg" style="width:200px;height:200px">
+                                             <div class="bot-text"><p style="color:green;padding:10px 0px 0px 20px">O Level</p></div>
+                                        </div>
+                                    </div>   
+                            </div>                
+            </div>
+            <div class="footer">
+                    <li style="padding:40px 0px 0px 1240px"><a href="#">Country:India</a></li>
+               <ul>
+                  <li><a href="#">Fallow us</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li style="padding:0px 0px 0px 820px"><a href="#">Engliesh</a></li>
+                
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>
