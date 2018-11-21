@@ -1,0 +1,134 @@
+body
+{
+	margin: 0;
+	padding:0;
+	background-color: white;
+}
+.first_section
+{
+	width: 95%;
+    height: 100px;
+    background-color: black;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+.first_one
+{
+	width: 20%;
+	height: 60px;
+	background-color: orange;
+	float: left;
+	margin: 20px;
+	margin-left: 45px;
+	border-radius: 10px;
+}
+.first_two
+{
+	width: 20%;
+	height: 40px;
+	background-color: blue;
+	float: left;
+	margin: 30px;
+	border-radius: 10px;
+}
+.first_three
+{
+	width: 20%;
+	height: 40px;
+	background-color: green;
+	float: right;
+	margin: 30px;
+	border-radius: 10px;
+}
+.second_section
+{
+	width: 95%;
+	height: 60px;
+    background-color: black;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.third_section
+{
+	width: 95%;
+	height: 600px;
+    background-color: black;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.third_one
+{
+	width: 60%;
+	height: 530px;
+	background-color: orange;
+	float: left;
+	margin: 35px;
+	border-radius: 10px;
+}
+.third_two
+{
+	width: 30%;
+	height: 530px;
+	margin-left: 10px;
+	background-color: green;
+	float: left;
+	margin: 35px;
+	border-radius: 10px;
+}
+.fourth_section
+{
+	width: 95%;
+    height: 880px;
+    background-color: black;
+    margin-left: 2%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.fourth_one
+{
+	width: 60%;
+	height: 800px;
+	background-color: green;
+	float: left;
+	margin: 37px;
+	border-radius: 10px;
+}
+.four
+{
+	width: 30%;
+	height: 800px;
+	background-color: orange;
+	float: left;
+	margin: 37px;
+	border-radius: 10px;
+}
+.one
+{
+	width: 43%;
+    margin: 29px;
+    height: 171px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+}
+.two
+{
+	width: 31%;
+    height: 40px;
+    background-color: white;
+    float: left;
+    margin-left: 29px;
+    margin-right: 137px;
+    border-radius: 10px;
+}
+.three
+{
+	width: 43%;
+	height: 235px;
+	background-color: white;
+	float: left;
+	border-radius: 10px;
+	margin: 29px;
+}
