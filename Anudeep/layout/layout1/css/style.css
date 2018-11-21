@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+#container{
+    border: 1px solid black;
+    height: 787px;
+    text-align: center;
+}
+.header{
+    border: 1px solid black;
+    height: 50px; 
+}
+.Menu{
+    border: 1px solid black;
+    width: 25%;
+    height: 50px;
+    float: left;
+    background-color: aqua;
+}
+.Logo{
+    border: 1px solid black;
+    width: 50%;
+    height: 50px;
+    float:  left;  
+    background-color: aquamarine;
+}
+.login{
+    border: 1px solid black;
+    width: 24.60%;
+    height: 50px;
+    float: right;
+    background-color: rgb(194, 235, 235);
+}
+.Main-content{
+    border: 1px solid black;
+    height: 600px;
+}
+.left-panel{
+    border: 1px solid black;
+    width: 15%;
+    height: 600px;
+    float: left;
+    background-color: beige;
+}
+.center-context{
+    border: 1px solid black;
+    width: 70%;
+    height: 600px;
+    float: left;
+    background-color: blanchedalmond;
+}
+.right-panel{
+    border: 1px solid black;
+    width: 14.60%;
+    height: 600px;
+    float: right;
+    background-color: cornsilk;
+}
+.footer{
+    border: 1px solid black;
+    height: 137px;
+    background-color: wheat;
+}
