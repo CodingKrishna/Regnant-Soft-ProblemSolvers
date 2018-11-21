@@ -1,0 +1,46 @@
+programs on arrays.
+Starter:
+
+    Print array elements--done
+    Print even numbers in array--done
+    Print odd numbers in array--done
+    Print elements at even index in array--done
+    Print elements at odd index in array--done
+    Print elements left to right and right to left from middle-done
+    Print the Alternate Elements in an Array--done
+    Find the index of a given element---done in java
+    Calculate Sum & Average of an Array---done
+
+Medium:
+
+    Find the prime numbers in array
+    Find the sume of all the array elements
+    Revers elements inside Array.
+    Find the douplicates elements inside Array
+    Find the Number of Non Repeated Elements in an Array
+    Copy elements from one array to another array.
+    Find out the number of repetations of an element in array.
+    Delete the element from array
+    Find largest number in array
+    Find second largest element in array
+    Find the nth max element in array
+    Insert an Element in a Specified Position in a given Array
+    Sort the Array in an Ascending Order
+    Sort the Array in Descending Order
+    Sort Names in an Alphabetical Order
+    How find the first repeating element in an array of integers
+    How to rearrange array in alternating positive and negative number
+
+Complex:
+
+    Cyclically Permute the Elements of an Array
+    identify missing Numbers in a given Array
+    Matrix multiplication
+    Print the diagonastic elements inside matrix
+    Segregate 0s on Left Side & 1s on right side of the Array
+    Find 2 Elements in the Array such that Difference between them is Largest
+    Find the two Elements such that their Sum is Closest to Zero
+    How to find all pairs on integer array whose sum is equal to given number
+    Write a program to remove duplicates from array
+    Write a program to find intersection of two sorted arrays
+    How to find common elements in three sorted array
