@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+}
+.headersec{
+	height: 150px;
+	width: 100%;
+	background-color: grey;
+}
+.bodysec{
+	height: 800px;
+	width: 100%;
+	background-color: indigo;
+}
+.footersec{
+	height: 100px;
+	width: 100%;
+	background-color: grey;
+}
+.header{
+	float:left;
+	height: 100%;
+	width: 80%;
+	background-color: lightcoral;
+}
+.navigation{
+	float: left;
+	height: 35%;
+	width: 100%;
+	background-color: indianred;
+}
+.carouselDiv{
+	float: left;
+	height: 45%;
+	width: 100%;
+	background-color: lightsalmon;
+}
+.textDiv{
+	float: left;
+	height: 55%;
+	width: 30%;
+	background-color: firebrick;
+}
+.imageGallery{
+	float: left;
+	height: 55%;
+	width: 40%;
+	background-color: darksalmon;
+}
+.logo{
+	float: left;
+	height: 100%;
+	width: 20%;
+	background-color: red;
+}
+.footer{
+	float: left;
+	height: 100%;
+	width: 75%;
+	background-color: darkred;
+}
+.links{
+	float: right;
+	height: 100%;
+	width: 25%;
+	background-color: #900c3f;
+}
+.unlist{
+	width: 50%;
+	background-color: darkcyan;
+	padding: 0px;
+
+}
+.unlist li{
+	display: inline;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	border-right: 1px solid white;
+	line-height: 52px;
+}
