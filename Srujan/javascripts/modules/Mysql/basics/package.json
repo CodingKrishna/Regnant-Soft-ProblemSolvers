@@ -1,0 +1,14 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "Basics of my sql",
+  "main": "testConnention.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "srujan",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
