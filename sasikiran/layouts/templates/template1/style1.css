@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.one{
+    background-color: yellow;
+    width: 25%;
+    height: 494px;
+    margin-top: 10px;
+   
+}
+.img1{
+    width: 100%;
+}
+.name{
+    margin-top: -69px;
+    font-size: 19px;
+}
+.fa fa-briefcase{
+    padding-right: 8px;
+}
+
+
+.two{
+    background-color: red;
+    width: 73%;
+    margin-left: 351px;
+    margin-top: -508px;
+    padding-bottom: 480px;
+}
+
+.three{
+    background-color: green;
+}
