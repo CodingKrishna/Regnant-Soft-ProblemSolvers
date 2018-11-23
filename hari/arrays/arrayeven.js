@@ -1,0 +1,13 @@
+/*program to print even and odd numbers*/
+var a = [2,3,4,5,9]
+for(i=0;i<a.length;i++){
+
+   if(a[i]%2==0)
+   {
+       console.log("even numbers "+a[i])
+   }
+   else
+   {
+       console.log("odd numbers "+a[i])
+   }
+}
