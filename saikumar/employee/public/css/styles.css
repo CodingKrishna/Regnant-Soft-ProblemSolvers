@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.edit{
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: #18bb7c;
+    color: #fff;
+}
+.delete{
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: #D23641;;
+    color: #fff;
+}
+.add{
+    background-color: #18bb7c;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+}
+.emptable{
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+.page-header{
+    padding: 2px;
+    padding-left: 40px;
+    background:#00304C;
+    color:#FEFFFD;
+}
+.page{
+    padding:20px;
+    min-height: 472px;
+}
+.save{
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: #18bb7c;
+    color: #fff;
+}
+.cancel{
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: #D23641;;
+    color: #fff;
+}

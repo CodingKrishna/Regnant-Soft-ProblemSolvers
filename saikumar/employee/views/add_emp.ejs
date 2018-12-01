@@ -1,0 +1,22 @@
+<%- include layouts/header.ejs %>
+    <form action = "/employees/add" method = "post">
+    <table cellpadding="11">
+    <tr>
+        <td>  Name: </td><td><input type ="text" required name = "uname"></td>
+    </tr>
+    <tr>
+       <td>Email:</tabel></td><td><input type = "text" required name= "email"></td>
+    </tr>
+    <tr>
+        <td> Address:</tabel></td><td><input type = "text" required name = "addr"></td>
+     </tr>
+     <tr>
+         <td>  phone:</tabel></td><td><input type = "text" required name = "phone"></td>
+    </tr>
+     <tr>
+         <td><input class="save" type = "submit" value="save"></td>
+         <td><input class="cancel" type="button" onclick="cancel()" value = "cancel"></td>
+     </tr>
+    </form>
+</table>
+    <%-include layouts/footer.ejs %>
