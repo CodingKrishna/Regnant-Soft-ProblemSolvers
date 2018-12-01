@@ -1,0 +1,34 @@
+body {
+    margin:0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background:#eee;
+    width:100%;
+    height:100%;
+  }
+.page-header{
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    text-align: center;
+}
+.adduser-btn{padding-left:8px}
+.adduser-btn button{
+    padding:10px 20px;background:brown ;border:1px solid #fff;
+    color:#FEFFFD;font-weight:bold;
+}
+.page-data{padding:10px;margin: 0px 0px 0px 162px;}
+#footer{
+    background-color: coral;
+    padding: 9px;
+    text-align: center;
+}
+th {
+    padding: 20px;
+}
+table  {
+    
+    border-collapse: collapse;
+}
+.a-inside{padding:4px 10px;border:1px solid #fff;text-decoration:none;}
+.a-inside.edit{background-color: #e67d11;color:#fff;}
+.a-inside.delete{background-color: rgb(214, 36, 48);color:#fff;}
