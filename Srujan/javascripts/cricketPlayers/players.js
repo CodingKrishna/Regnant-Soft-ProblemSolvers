@@ -6,10 +6,10 @@ var k=0;
 let demo=[];
     let j=0;
 var count=0;
-for(var i=0;count<arr.length;i++){
+for(var i=0;count<arr.length;i++){          //count increase increses only whrn element is added to final
     
     var temp=ld.random(0,arr.length);
-    if(arr[temp]!=undefined){
+    if(arr[temp]!=undefined){               //if the element is undefined then don't enter the loop
         selection(arr[temp]);
        count++;
     }
@@ -19,18 +19,14 @@ function selection(a){
     
     console.log(demo.length);
     if(demo.length<12){
-        demo[j]=arr[temp]
-        arr[temp]=undefined;
-        j++;
+        demo[j]=arr[temp]       //assigning the selected elementto demo and making the element as undefined    
+        arr[temp]=undefined;     
+        j++;                    //incrementing the index of demo
         
-        if(demo.length==11){
-           // console.log(k);
-            //console.log(demo);
+        if(demo.length==11){        //if demolength is 11 then add array to final 
             final[k]=demo;
-            console.log(final);
-            k++;
-            demo=[];
-            console.log(final);
+            k++;                    //increseing the final index 
+            demo=[];                //making the demo empty and its index to 0    
             j=0;
 
         }

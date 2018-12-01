@@ -1,5 +1,7 @@
 /**
  * program to take string as a function print the string as its index
+ * input=abcd
+ * output=a-bb-ccc-dddd
  */
 var str='abcd';
 var op='';
