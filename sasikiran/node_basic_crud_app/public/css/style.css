@@ -1,0 +1,110 @@
+body {
+  margin:0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:#eee;
+  width:100%;
+  height:100%;
+}
+*{
+
+    border-radius:0px;
+}
+a {
+  color: white;
+  padding-left: 650px;
+}
+
+#wrapper{
+    
+    margin-top:30px;
+    width:90%;
+    min-height:600px;
+    margin-left:5%;
+    border:1px solid #ddd;
+    background: lightblue;
+   
+}
+
+.page-container{padding:20px;
+    background-color: lightblue;}
+.page-data{padding:10px;}
+.page-header{
+    
+    padding:2px;
+    padding-left:40px;
+    background: rebeccapurple;
+    color:#FEFFFD;
+    text-align: center;
+}
+.data-btn {
+    display: inline-block;
+padding: 15px 25px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: chocolate;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+  }
+  
+  .data-btn:hover {background-color: #3e8e41}
+  
+  .data-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.data-table{padding-left:10px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+.data-table table{border-collapse:collapse;border:1px solid #ddd;width:100%}
+.a-inside{background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 0px 8px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;}
+    .a-inside:hover {opacity: 1}
+.a-inside.edit{background-color:#18bb7c;color:#fff;}
+.a-inside.delete{background-color:#D23641;color:#fff;}
+
+input[type="text"]{
+    
+    border:1px solid #ddd;
+    height:26px;
+    width:300px;
+}
+.cancel{
+    background-color:#D23641;color:#fff;
+    border:1px solid #d32132;color:#fff;
+    padding:8px 35px;font-weight:bold;
+   
+
+}
+input[type="submit"]{
+
+    border:1px solid #6599FF;color:#fff;
+    padding:8px 35px;font-weight:bold;
+    background:#6599FF;
+}
+textarea{ border:1px solid #ddd;width:296px;}
+.label{font-weight:bold;}
+
+#footer{
+    background-color: gray;
+    margin-top:10%;
+    padding: 2%;
+    text-align: center;
+}
