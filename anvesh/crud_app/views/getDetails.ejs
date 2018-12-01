@@ -1,0 +1,21 @@
+<%- include partials/header.ejs %>
+
+<div class="one">
+                <div class="first1"><button onclick="add()">Add</button></div>
+            <div class="first"><div class="part">Name</div><div class="part">Phone</div><div class="part">address</div><div class="part">password</div><div class="part">Userid</div><div class="part">Actions</div></div>
+                 
+            <%if(data.length){
+            for(let i=0; i < data.length; i++) { %>
+ <div class="first"><div class="part"><%=data[i].Name%></div><div class="part"><%=data[i].phone%></div><div class="part"><%=data[i].Address%></div><div class="part"><%=data[i].Password%></div><div class="part"><%=data[i].UserId%></div>
+ <div class="part">
+     <button style="background-color:red; border: none;">   <a style="text-decoration: none;" href="../databade/delete/<%=data[i].UserId%>">Delete</a></button>&nbsp;
+     <button style="background-color: rgb(124, 221, 124);border: none">   <a style="text-decoration: none;" href="../databade/edit/<%=data[i].UserId%>">Edit</a></button>
+</div>
+</div>
+
+           <%  }
+            }%>
+
+                        
+        </div>
+        <%- include partials/footer.ejs %>

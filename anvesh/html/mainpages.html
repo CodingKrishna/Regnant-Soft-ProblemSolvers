@@ -1,0 +1,552 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            #main
+            {
+             width: 100%;
+             max-height:auto;
+            }
+            .header
+            {
+                  width: 100%;
+                  height: auto;
+                  color: white;
+                  background-color: rgb(20, 20, 20);
+                  font-size: 14px;
+                  text-align: center;
+                  padding:20px;
+                  position: fixed;
+                  z-index:1;
+            }
+            .right-body
+            {
+                width: 203px;
+                max-height:auto;
+                float: left;
+                position:fixed;
+                top:71px;
+                z-index: 1;
+            }
+            ul
+            {
+                  position: absolute;
+                                     
+            }
+            li
+            {             
+                  list-style-type: none;
+                  padding: 9px 0px 9px 0px;
+                  border-bottom:1px solid #494848;
+                  background-color: rgb(238, 230, 210);
+             }
+            a
+            {              
+                    text-decoration: none; 
+                    color: #555;
+            }
+            a:hover
+            {
+                background-color:rgba(78, 72, 72, 0.2);     
+            }
+            .left-body
+            {
+                width:1141px;
+                max-height: auto;
+                float: left;
+                position: absolute;
+                top: 72px;
+                left: 206px;
+                
+            }
+            #buttons
+            {
+                 width:1141px;
+                 height: 1000px;
+                 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            }
+            h2
+            {
+                text-align: center;
+                padding-top: 20px;
+            }
+            .color-button
+            {    margin: 30px 0px 0px 70px;
+                 width: 1000px;
+                 height: 110px;
+                 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+                 padding: 5px;
+            }
+            button
+            {
+                width: 77px;
+                height: 33px;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                margin-left:10px;
+            }
+            .red-bt
+            {
+                background-color: red;
+            }
+            .green-bt
+            {
+                background-color: green;
+            }
+            .blue-bt
+            {
+                background-color: blue;
+            }
+            .yellow-bt
+            {
+                background-color: yellow;
+            }
+            .perple-bt
+            {
+                background-color: purple;
+            }
+            .black-bt
+            {
+                background-color: black;
+            }
+            .disable-bt
+            {
+                background-color: disable;
+            }
+            .shadow button:hover
+            {
+               box-shadow: 3px 3px 3px 3px rgb(206, 207, 209) ;
+            }
+            h3
+            {
+                padding:15px 0px 10px 10px;
+                
+            } 
+            .sizes button
+            {
+             background-color:rebeccapurple;
+             border: none;
+            }
+            .tiny
+            {
+               width: 35px;
+               height: 16px;
+            }
+            .small
+            {
+                width: 74px;
+                height: 27px;
+            }
+            .medium
+            {
+                width: 100px;
+                height: 39px;
+            }
+            .large
+            {
+                width: 160;
+                height: 50px;
+            }
+            .xlarge
+            {
+                width: 195px;
+                height: 60px;
+            }
+            .block-button button
+            {
+                width: 99%;
+                height: 25px; 
+                margin: 0px 0px 8px 0px;
+            }
+            .pink-full-bt
+            {
+                  background-color: pink;               
+            }
+            .blue-full-bt
+            {
+                  background-color: #9c27b0;               
+            }
+            .add-button button
+            {
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius:50%; 
+            }
+            .red-add
+            {
+                background-color: red;
+            }
+            .black-add
+            {
+                background-color: black;
+            }
+            .yellow-add
+            {
+                background-color: yellow;
+            }
+            .green-add
+            {
+                background-color: green;
+            }
+            .border-button button
+            {
+              background-color: white;
+                         }
+            .black
+            {
+                border: 1px solid black;
+
+            }
+            .lightblue
+            {
+                border: 1px solid lightblue;
+
+            }
+            .red
+            {
+                border: 1px solid red;
+
+            }
+            .blue
+            {
+                border: 1px solid blue;
+            }
+            #nav-bar
+            {
+                width:1141px;
+                height: 250px;
+                box-shadow: 3px 3px 3px 3px rgb(206, 207, 209) ;
+            }
+            .nav-creat
+            {
+              height: 250px;
+              width: 1142px;
+              padding-left:50px; 
+              padding-top:30px; 
+            }
+            .in
+            {
+                width: 800px;
+                height: 40px;
+                background-color: black;
+                margin-top:10px;  
+            }
+             .one
+            {
+                 padding:10px 0px 0px 20px;
+                 background-color: black;
+            }
+            .one li
+            {
+               display: inline;
+              background-color: black;
+               list-style-type: none;
+               border-bottom:none;
+
+            }
+            .one a
+            {
+              background-color: black;
+              color: white;
+              text-decoration: none;
+              padding:0px 10px 0px 10px;
+            }
+            .one a:hover
+            {
+              background-color:rgba(223, 230, 230,0.5);
+              padding: 10px 10px 12px 10px;
+            }
+            .content
+            {    width:800px;
+                 height: 80px;
+                 background-color: rgba(178, 182, 182,0.5);
+                 display:none;
+            }
+            .content h4
+            {
+                padding: 3px;
+            }
+            .content p
+            {
+                padding: 3px;
+            }
+            #spinners
+            {
+              width: 1145px;
+              height: 900px;
+            }
+            .spinner-main
+            {
+                width: 1090px;
+                height: 725px;
+                margin-top:10px; 
+                box-shadow: 4px 4px 4px 4px rgb(206, 202, 202);
+                padding: 30px;
+            }
+            .spins
+            {
+                width:150px;
+                height:150px;
+                border: 10px solid gainsboro;
+                border-radius:50%;
+                border-top: 10px solid cadetblue;
+                animation: spin 2s linear infinite;
+            }
+            @keyframes spin
+            {
+                100%{transform: rotate(360deg);}
+            }
+            .spins2
+            {
+                width:150px;
+                height:150px;
+                border: 10px solid gainsboro;
+                border-radius:50%;
+                border-top: 10px solid cadetblue;
+                border-bottom: 10px solid cadetblue;
+                animation: spin 2s linear infinite;
+            }
+            @keyframes spin
+            {
+                100%{transform: rotate(360deg);}
+            }
+            .dot
+            {
+                width: 186px;
+                height: 186px;
+                position: relative;
+                padding: 30px;
+            }
+            .dot-box
+            {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                transform: rotate(200deg);
+                animation: orbit 6.96s infinite;
+                opacity: 0;
+            }
+            .dot-spin
+            {
+                 position: absolute;
+                 width: 10px;
+                 height: 10px;
+                 background: black;
+                 border-radius: 10px;
+                 left: 0px;
+                 right: 0px;
+            }
+            #dot1
+            {
+                 animation-delay:1.85s;
+            }
+            #dot2
+            {
+                animation-delay:1.53s;
+            }
+            #dot3
+            {
+                animation-delay:0.30s;
+            }
+            #dot4
+            {
+                animation-delay:0.60s;
+            }
+            #dot5
+            {
+                animation-delay:0.90s;
+            }
+            #dot6
+            {
+                animation-delay:1.25s;
+            }
+            @keyframes orbit {
+            0%{
+                opacity: 1;
+                z-index:99;
+                transform: rotate(180deg);
+                animation-timing-function: ease-out;
+            }
+            7%{
+                opacity: 1;
+                transform: rotate(300deg);
+                animation-timing-function: linear;
+                origin:0%;
+
+            }
+            30% {
+                opacity: 1;
+                transform:rotate(410deg);
+                animation-timing-function: ease-in-out;
+                origin:7%;
+            }
+            39% {
+                opacity: 1;
+                transform: rotate(645deg);
+                animation-timing-function: linear;
+                origin:30%;
+            }
+            70% {
+                opacity: 1;
+                transform: rotate(770deg);
+                animation-timing-function: ease-out;
+                origin:39%;
+            }
+            75% {
+                opacity: 1;
+                transform: rotate(900deg);
+                animation-timing-function: ease-out;
+                origin:70%;
+            }
+            76% {
+            opacity: 0;
+                transform:rotate(900deg);
+            }
+            100% {
+            opacity: 0;
+                transform: rotate(900deg);
+            }
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="main">
+                <div class="header"><h1>UI COMPONENTS</h1></div>
+                <div class="right-body">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="#buttons" style="padding: 10px 96px 10px 60px;">Buttons</a></li>
+                                <li><a href="#nav-bar" style="padding: 10px 115px 10px 60px;">Tabs</a></li>
+                                <li><a href="#" style="padding: 10px 98px 10px 60px;">Badges</a></li>
+                                <li><a href="#spinners" style="padding: 10px 88px 10px 60px;">Spinners</a></li>
+                                <li><a href="#" style="padding: 10px 103px 10px 60px;">Popup</a></li>
+                                <li><a href="#"style="padding: 10px 68px 10px 60px;">PrograssBar</a></li>
+                                <li><a href="#" style="padding: 10px 76px 10px 60px;">Accordion</a></li>
+                                <li><a href="#" style="padding: 10px 92px 10px 60px;">coursoel</a></li>
+                                <li><a href="#" style="padding: 10px 45px 10px 60px;">ModelDialogue</a></li>
+                                <li><a href="#" style="padding: 10px 78px 10px 60px;">Pagination</a></li>
+                                <li><a href="#" style="padding: 10px 60px 10px 60px;">BreadCumbs</a></li>
+                                <li><a href="#" style="padding: 10px 90px 10px 60px;">NavBars</a></li>
+                                <li><a href="#" style="padding: 10px 107px 10px 60px;">Cards</a></li>
+                                <li><a href="#" style="padding: 10px 95px 10px 60px;">Pannels</a></li>
+                                <li><a href="#" style="padding: 10px 105px 10px 60px;">Toster</a></li>
+    
+                            </ul>
+                       </div>
+                </div>
+                   <div class="left-body">
+                           <div id="buttons">
+                               <h2>BUTTONS</h2>
+                               <div class="color-button box">
+                                   <h3>Color Buttons</h3>
+                                   <button class="red-bt">red</button>
+                                   <button class="green-bt">green</button>
+                                   <button class="blue-bt">blue</button>
+                                   <button class="yellow-bt">yellow</button>
+                                   <button class="perple-bt">perple</button>
+                                   <button class="black-bt">black</button>
+                                   <button class="disbled-bt">disabled</button>
+                               </div>
+                               <div class="color-button shadow">
+                                    <h3>Hover Buttons</h3>
+                                   <button class="red-bt">red</button>
+                                   <button class="green-bt">green</button>
+                                   <button class="blue-bt">blue</button>
+                                   <button class="yellow-bt">yellow</button>
+                                   <button class="perple-bt">perple</button>
+                                   <button class="black-bt">black</button>
+                                   <button class="disbled-bt">disabled</button>
+ 
+                               </div>
+                               <div class="color-button sizes">
+                                    <h3>Different Sizes</h3>
+                                   <button class="tiny">Tint</button>
+                                   <button class="small">Small</button>
+                                   <button class="Medium">Medium</button>
+                                   <button class="large">Large</button>
+                                   <button class="xlarge">XLarge</button>
+                               </div>
+                               <div class="color-button block-button">
+                                    <h3>BlockLevelButton</h3>
+                                   <button class="pink-full-bt">pink</button>
+                                   <button class="blue-full-bt">blue</button>  
+                               </div>
+                               <div class="color-button add-button">
+                                    <h3>BlockLevelButton</h3>
+                                   <button class="red-add">red</button>
+                                   <button class="black-add">black</butto>
+                                   <button class="yellow-add">yellow</button>
+                                   <button class="green-add">green</button>
+                               </div>
+                               <div class="color-button border-button">
+                                    <h3>Border Button</h3>
+                                   <button class="black">button</button>
+                                   <button class="lightblue">button</butto>
+                                   <button class="red">button</button>
+                                   <button class="blue">button</button>
+                                   </div>                             
+                           </div>
+                              <div id="nav-bar">
+                                    <h2>Tabs</h2>
+                                  <div class="nav-creat">
+                                      <div class="in">
+                                          <ul class="one"><li><a href="#" onclick="openTab('Phani')">Phani</a></li>
+                                            <li><a href="#">Krishna</a></li>
+                                            <li><a href="#">kishon</a></li>
+                                            <li><a href="#">PC</a></li>
+                                            <li><a href="#">Vijay</a></li>
+                                            <li><a href="#">Rajith</a></li>
+                                          </ul>
+                                      </div>
+                                      <div class="content" id="Phani">
+                                          <h4>Name:Phani</h4>
+                                          <p>College:Swarnandra college of engineering and technology.</p>
+                                          <p>From:Guntur</P>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="spinners">
+                                  <h2>Spinners</h2>
+                                  <div class="spinner-main">
+                                      <h3>Spinner</h3>
+                                      <div class="spins"></div>
+                                      
+                                      <h3>Spinner2</h3>
+                                      <div class="spins2"></div>
+                                      <h3>Dotted Spinner</h3>
+                                           <div class="dot">
+                                               <div class="dot-box" id="dot1">
+                                                   <div class="dot-spin"></div>
+                                               </div>
+                                               <div class="dot-box" id="dot2">
+                                                    <div class="dot-spin"></div>
+                                                </div>
+                                                <div class="dot-box" id="dot3">
+                                                        <div class="dot-spin"></div>
+                                                </div>
+                                                <div class="dot-box" id="dot4">
+                                                        <div class="dot-spin"></div>
+                                                </div>
+                                                <div class="dot-box" id="dot5">
+                                                        <div class="dot-spin"></div>
+                                                </div>
+                                                <div class="dot-box" id="dot6">
+                                                        <div class="dot-spin"></div>
+                                                </div>
+                                           </div>
+                                  </div>
+                                  
+                              </div>
+                        </div> 
+        </div>
+    </body>
+</html>
