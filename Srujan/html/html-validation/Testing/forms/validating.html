@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .disp{
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div id='some'>
+        <input type="text" id='check' onblur="validate()" >
+        </div>
+        <div id= add>
+            
+         <input type="text" onblur="validate()" >
+        
+         <button onclick="add()">+</button>
+        </div>   
+        <div id= 'add1' class="disp">
+
+        </div> 
+    </div>
+    <script>
+    function validate(){
+        let t=document.getElementById('some');
+        let x= document.getElementById('check');
+        if(x.value==''){
+            let s=document.createElement('spam');
+            s.innerHTML='add something';
+            t.appendChild(s);
+        }
+    }
+
+    function add(){
+        let x=document.createElement('input');
+        let c=document.createAttribute('type');
+        c.value='text';
+        x.setAttributeNode(c);
+        let a=document.getElementById('add1');
+        x.style.float='none';
+        console.log(x)
+        a.append(x);
+    }
+    </script>
+</body>
+</html>

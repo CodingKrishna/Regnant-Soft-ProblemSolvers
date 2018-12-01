@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookies</title>
+</head>
+<body>
+   <button onclick="setCookie()">Set Cookie</button>
+   <button onclick="getCookie()">Get Cookie</button>
+    <script>
+    function setCookie(){
+        document.cookie="username=srujan";
+    }
+    function getCookie(){
+        if(document.cookie.length!=0){
+            var values=document.cookie.split('=');
+            alert('key '+values[0]+' value is : '+values[1]);
+        }
+        else{
+            alert('cookie not found');
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display None Nd Visbility</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <img src="F:\HTML\tasks\task1\images\nature.jpg" alt="img with display None" class="images">
+        <button  onclick="removeElement()" class="button">clickHere</button>
+    </div>
+    <div id="box2">
+        <img src="F:\HTML\tasks\task1\images\nature1.jpg" alt="img with display Visbility">
+        <button  onclick="hideElement()">clickHere</button>
+    </div>
+    <div id="box3">
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script>
+        function removeElement(){
+            document.getElementById("box1").style.display='none';
+        }
+        function hideElement(){
+            document.getElementById('box2').style.visibility="hidden";
+        }
+        function reset(){
+            document.getElementById('box1').style.display='block';
+            document.getElementById('box2').style.visibility='visible'; 
+        }
+    </script>
+</body>
+</html>

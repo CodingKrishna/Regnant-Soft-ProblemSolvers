@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accordation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        
+        .txtcenter{
+            text-align: center;
+        }
+        .accordian{
+            width: 90%;
+             padding: 15px 20px;
+             text-align: left;
+            font-family: sans-serif;
+             font-size: 17px;
+             border: none;
+             outline: none;
+        }
+        .accordian:hover{
+            background-color:  #969799;
+        }
+        .accordian::after{
+            content: '\f055';           
+            font-family: "fontawesome";
+            font-size: 15px;
+            float: right;
+        }
+
+        .acc-content{
+            width: 89.84%;
+            margin-top: -17px;
+            border-left: 1px solid#ccc3c3;
+            border-right: 1px solid#ccc3c3;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .acc-content p{
+            
+            width: 89.84%;
+             font-family: sans-serif;
+             font-size: 18px;
+            
+        }
+        .accordian.is-open::after{
+            content: '\f056';
+           
+            font-family: "fontawesome";
+            font-size: 15px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordation">
+        <div class="txtcenter">
+            <h1>Accodation</h1>
+        </div>
+        <button class="accordian " >
+            Section1
+            
+        </button>
+        <div class="acc-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+               laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                   laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                   laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+               
+        </div>
+        <button class="accordian " >
+            Section1
+            
+        </button>
+        <div class="acc-content">
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                   laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+                   
+         </div>
+        <button class="accordian " >
+                Section1
+              
+        </button>
+        <div class="acc-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                       laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                           laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                           laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                       
+        </div>
+        <script>
+        
+           var dis=document.getElementsByClassName("accordian");
+           for(var i=0;i<dis.length;i++){
+               dis[i].onclick=function(){
+                   this.classList.toggle('is-open');
+                   var content=this.nextElementSibling;
+                   console.log(content);
+                   console.log(content.style.maxHeight);
+                   if(content.style.maxHeight){
+                       //making the section close
+                       content.style.maxHeight=null;
+                   }
+                   else{
+                       content.style.maxHeight=content.scrollHeight+'px';
+                   }
+               }
+           }
+        
+        </script>
+    </div>
+</body>
+</html>

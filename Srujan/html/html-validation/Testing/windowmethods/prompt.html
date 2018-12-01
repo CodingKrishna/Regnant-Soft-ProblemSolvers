@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pmt()">click here</button>
+    <p id='demo'></p>
+    <script>
+    
+    function pmt(){
+        var txt;    
+        //creating the prompt without default values
+        var prmpt=prompt('Enter your name');
+    
+        if(prmpt==null||prmpt==''){
+            txt="user cancelled the prompt"
+        }
+        else{
+            txt='user name is '+prmpt+'.'
+        }
+        //assigning the text to the id demo whixh is p tag
+        document.getElementById('demo').innerHTML=txt;
+    }
+    </script>
+</body>
+</html>
