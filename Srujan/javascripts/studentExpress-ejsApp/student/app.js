@@ -8,8 +8,9 @@
  var http = require('http');
  var path = require('path');
 
- //load student route
+ //load student route and timezone
  var student=require('./routes/student');
+ var timezone=require('./routes/timezone');
  var app=express();
 
  //loading express connection and mysql
@@ -56,7 +57,10 @@ app.post('/student/add',student.save);
 app.get('/student/edit/:id',student.edit);
 app.get('/student/delete/:id',student.delete);
 app.post('/student/edit/:id',student.editsave);
-//app.use(app.router);
+app.get('/timezone',timezone.gettimezone);
+app.get('/timezone/time',timezone.sendtime);
+app.get('/timezone/time/ajax',timezone.sendtimeajax);
+app.use(app.router);
 
 
 http.createServer(app).listen(app.get('port'),function(){

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/timezone/time" method="get">
+        
+        <label>Time zone</label>
+        <select name="loc">
+            <option  value="America/Los_Angeles">Los Angeles</option>
+            <option  value="Aisa/Taipei">Taipei</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+    <div> 
+        <p><%= time %></p>
+    </div>
+    <div>
+        <h1>Ajax based request</h1>
+            <select name="loc" id='location' onchange="sendtime()">
+                    <option  value="America/Los_Angeles">Los Angeles</option>
+                    <option  value="Aisa/Taipei">Taipei</option>
+                </select>
+                <div id="disp">
+
+                </div>
+    </div>
+  
+    <script src="/../../js/time.js"> </script>
+</body>
+</html>
