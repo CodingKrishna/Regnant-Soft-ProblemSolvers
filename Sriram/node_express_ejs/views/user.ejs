@@ -1,0 +1,66 @@
+<%- include layout/header.ejs %>
+
+<div class="main">
+
+   <h1 style="float: right;
+   margin-top: 90px; margin-right: -195px;"><%=page_title %></h1>
+       <button class="btn btn-primary" onclick="addUser()">Add User+</button>
+
+
+       <div class="table_div">
+    <table class="table"  border="5px" cellpadding="12" cellspacing="5">
+          <tr>
+              <th width="50px">S.No</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>
+                  Action
+              </th>
+              <th>
+                  Action
+              </th>
+          </tr>
+          
+          <% if(data.length) {
+
+          for(var index = 0; index < data.length; index++){ %>
+
+            <tr style="text-align: center">
+                <td> <%= (index+1) %></td>
+                <td><%=data[index].name %></td>
+                <td><%=data[index].email %></td>
+                <td style="background-color: #769dad">
+                    <a style="text-decoration: none; color: whitesmoke;"  href="../users/edit/<%=data[index].id%>">Edit</a>
+                   
+                   </td>
+                   <td style="background-color: tomato"><a style="text-decoration: none; color: black;" href="../users/delete/<%=data[index].id%>">Delete </a></td>
+
+            </tr>
+            <!-- create edit and delete buttons -->
+           
+              
+
+            <% }
+        }
+        else{
+
+         %>
+        <tr>
+            <td colspan="3">Oops!!!!!!!</td>
+            <td>NO USER FOUND</td>
+        </tr>
+        <% } %>
+
+
+    </table>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<%- include layout/footer.ejs %>

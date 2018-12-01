@@ -1,0 +1,58 @@
+<%- include layout/header.ejs %>
+
+
+
+
+
+
+      <div class="main">
+
+   <form action="/users/add" method="post" autocomplete="off" class="form_tg">
+
+
+
+      <table class="t1">
+          <tbody class= "t1_body">
+                <tr> 
+                    <td calss="t1_data">Name</td>
+                    <td>: <input type="text" name="name" required></td>
+                </tr>
+                
+                <tr> 
+                  <td calss="t1_data">E-Mail</td>
+                  <td>: <input type="text" name="email" required></td>
+              </tr>
+
+
+              <tr> 
+                  <td calss="t1_data">Password</td>
+                  <td>: <input type="password" name="pwd" required></td>
+              </tr>
+
+              <tr> 
+                  <td calss="t1_data"></td>
+                  <td>
+                       &nbsp; 
+                      <input type="submit" name="submit" value="Save" style="background-color: #5cd446">
+                      <input type="button" name="cancel" value="Cancel" style="background-color: #ef182b" class="cancel" onclick="cancelAdd()" ></td>
+              </tr>
+
+
+
+          </tbody>
+
+
+
+      </table>
+
+
+
+
+
+
+    </form>
+       
+
+      </div>
+
+      <%- include layout/footer.ejs %>
