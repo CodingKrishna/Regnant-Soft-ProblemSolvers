@@ -1,0 +1,40 @@
+<!-- 
+    program to display the local storage data of counr 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LocalStorages</title>
+    
+</head>
+<body>
+    <button onclick="store()">click here</button>
+    <p class="demo"></p>
+    <script>
+        var d
+        function store(){
+            // the typeof(Storage) helps in finding the local storage is supported by this html version
+            if(typeof(Storage)!== undefined){
+                console.log(localStorage.count);
+                if(localStorage.count){
+                    localStorage.count=Number(localStorage.count)+1;
+                }
+                // else{
+                //     localStorage.count=1;
+                // }
+                d = document.getElementsByClassName('demo');
+                d[0].innerHTML='The count is '+localStorage.count;
+            }
+            else{
+                d=document.getElementsByClassName('demo');
+                d[0].innerHTML='Sorry! browser cannot support this html version';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SessionStorage</title>
+</head>
+<body>
+    <button onclick='store()'>Chick here</button>
+    <p id=demo></p>
+    <script>
+     function store(){
+         if(typeof(Storage) !== "undefined"){
+             console.log(sessionStorage.count);
+             if(sessionStorage.count){
+                 sessionStorage.count=Number(sessionStorage.count)+1;
+             }
+             else
+             sessionStorage.count=1;
+             document.getElementById('demo').innerHTML='The count till now is : '+sessionStorage.count;
+            
+         }
+         else
+         document.getElementById('demo').innerHTML='Sorry! browser cannot support this html version';
+     }
+    </script>
+</body>
+</html>
