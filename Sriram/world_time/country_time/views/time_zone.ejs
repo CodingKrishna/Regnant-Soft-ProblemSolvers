@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%=(locals.title) ? title :''%></title>
+    <link rel="stylesheet" href="/../css.styles.css">
+    <script src="/../js/main.js"></script>
+</head>
+<body>
+
+
+  
+     <form action="./time/zone" method="post">
+    
+      <select name="time" id="time_id">
+          <option value="select">select</option>
+          <option value="Asia/Kolkata">Kolkata</option>
+         
+          <option value="America/Los_Angeles">Los_Angeles</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Europe/Paris">Paris</option>
+      </select>
+    
+        <input type="submit" value="Show"  >
+    
+    </form>
+
+    <h1><%=time%></h1>
+    
+</body>
+</html>
