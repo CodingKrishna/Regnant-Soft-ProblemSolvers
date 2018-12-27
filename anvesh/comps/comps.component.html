@@ -1,0 +1,48 @@
+
+<div>
+    <img src='{{ image }}'/>
+    <h1 >{{ title }}</h1>
+</div>
+
+
+<my-child  *ngFor='let lst of details'
+[all]="getTotal()"
+[male]="getTotalMale()"
+[female]="getTotalFemal()"
+(countRadioButtonChange)="onEmployeCountButton($event)"
+></my-child>
+<br/>
+
+
+<table >
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+        <td>salary</td>
+        <td>Date Of Birth</td>
+        <td>index</td>    
+        <td>first</td><td>last</td><td>odd</td><td>even</td>  
+    </tr>
+    <ng-container *ngFor='let lst of details;let i=index;let isFirst=first;let isLast=last;let isOdd=odd;let isEven=even'>
+    <tr     *ngIf="selectRadioButtonValue=='All' || selectRadioButtonValue==lst.gender ">
+        <td >{{lst.firstName | uppercase| employepipe:lst.gender}}</td>
+        <td>{{lst.lastName }}</td>
+        <td>{{lst.gender}}</td>
+        <td>{{lst.age}}</td>
+        <td>{{lst.salary | currency:'USD':true:'1.1-2'}}</td>
+
+        <td>{{lst.date| date:'d/MM/y' |lowercase}}</td>
+        <td>{{i}}</td>
+        <td>{{isFirst}}</td><td>{{isLast}}</td><td>{{isOdd}}</td><td>{{isEven}}</td>
+    </tr>
+</ng-container>
+</table>
+<br>
+<input [(ngModel)]="color" [style.background]="color">
+
+<button (click)="getCities()">click me</button>
+
+<newex id="anvesh"></newex>
+
